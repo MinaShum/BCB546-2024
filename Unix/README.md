@@ -1,10 +1,12 @@
-#UNIX Assignment - BCB 546
+<br>
+<br>
+# UNIX Assignment - BCB 546
 
 
-##Data Inspection
+## Data Inspection
 
-###Mina Shumaly
-###Attributes of `fang_et_al_genotypes`
+### Mina Shumaly <br>
+### Attributes of `fang_et_al_genotypes`
 
 ```
 ll -h #ls -lh fang_et_al_genotypes.txt
@@ -14,20 +16,28 @@ wc -l fang_et_al_genotypes.txt
 awk -F "\t" '{print NF; exit}' fang_et_al_genotypes.txt
 ```
 -rw-r--r--. 1 mshumaly domain users 11M Jan 24 13:25 fang_et_al_genotypes.txt
+<br>
 -rw-r--r--. 1 mshumaly domain users 81K Jan 24 13:25 snp_position.txt
+<br>
 -rw-r--r--. 1 mshumaly domain users 353 Jan 24 13:25 transpose.awk
+<br>
 Rw: owner – r: only read permissions – 1: number of hard links to the file – file dimensions – last modification date and time – name of the file
+<br>
+<br>
 
 fang_et_al_genotypes.txt: ASCII text, with very long lines
+<br>
+<br>
 
 By inspecting this file I learned that:
-1. The size of the file is 11M.
-2. Last modification date and time was Jan 24 13:25.
-3. It is a .txt file, ASCII text.
-4. The number of lines in this file is 2783.
-5. Contains 986 columns.
-
-
+<br>
+1. The size of the file is 11M. <br>
+2. Last modification date and time was Jan 24 13:25. <br>
+3. It is a .txt file, ASCII text. <br>
+4. The number of lines in this file is 2783. <br>
+5. Contains 986 columns. <br>
+<br>
+<br>
 ###Attributes of `snp_position.txt`
 
 ```
@@ -38,21 +48,28 @@ awk 'END {print NR}' snp_position.txt
 awk -F "\t" '{print NF; exit}' snp_position.txt
 ```
 -rw-r--r--. 1 mshumaly domain users 81K Jan 24 13:25 snp_position.txt
-
+<br>
+<br>
 snp_position.txt: ASCII text
+<br>
+<br>
 
 By inspecting this file I learned that:
+<br>
 
-1. The size of the file is 81K.
-2. Last modification date and time was Jan 24 13:25.
-3. It is a .txt file, ASCII text.
-4. The number of lines or rows in this file is 984.
-5. Contains 15 columns.
+1. The size of the file is 81K. <br>
+2. Last modification date and time was Jan 24 13:25. <br>
+3. It is a .txt file, ASCII text. <br>
+4. The number of lines or rows in this file is 984. <br>
+5. Contains 15 columns. <br>
+<br>
+<br>
 
+## Data Processing
+<br>
 
-##Data Processing
-
-###Maize Data
+### Maize Data
+<br>
 
 ```
 # Separating the files based on the provided strings
@@ -96,10 +113,17 @@ awk '$1575 == "multiple" { print > "mul.txt" }' fm.txt
 ```
 
 The explanation is provided in the code block using comments.
+<br>
 I have 10 files named mch_{1-10}.txt which contain separate chromosomes.
+<br>
 10 files names inc{1-10}.txt for increasing order and "?".
+<br>
 10 files named dec{1-10}.txt for decreasing order and replacing "?" with "-".
+<br>
 1 file named mul.txt for "multiple" and 1 named unknown.txt for "unknown".
+<br>
+<br>
+<br>
 
 
 ###Teosinte Data
@@ -136,7 +160,15 @@ awk '$977 == "multiple" { print > "mul.txt" }' ft.txt
 ```
 
 The explanation is provided in the code block using comments.
+<br>
 I have 10 files named mch_{1-10}.txt which contain separate chromosomes.
+<br>
 10 files names inc{1-10}.txt for increasing order and "?".
+<br>
 10 files named dec{1-10}.txt for decreasing order and replacing "?" with "-".
+<br>
 1 file named mul.txt for "multiple" and 1 named unknown.txt for "unknown".
+<br>
+<br>
+<br>
+
