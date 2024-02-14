@@ -94,7 +94,6 @@ awk '{print $1575}' fm.txt | sort | uniq -c
 for i in {1..10}; do     awk -v num="$i" '$1575 == num { print $0 > "mch_"num".txt" }' fm.txt; done
 # Using the code below just to check the counts
 total_sum=0
-
 for i in {1..10}; do
     row_count=$(wc -l "mch_$i.txt" | awk '{print $1}')
     total_sum=$((total_sum + row_count))
