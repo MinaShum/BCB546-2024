@@ -1,6 +1,6 @@
 <br>
 <br>
-# UNIX Assignment - BCB 546
+## UNIX Assignment - BCB 546
 
 
 ## Data Inspection
@@ -38,7 +38,7 @@ By inspecting this file I learned that:
 5. Contains 986 columns. <br>
 <br>
 <br>
-###Attributes of `snp_position.txt`
+### Attributes of `snp_position.txt`
 
 ```
 ll -h #ls -lh snp_position.txt
