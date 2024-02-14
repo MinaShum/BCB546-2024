@@ -1,6 +1,6 @@
 <br>
 <br>
-## UNIX Assignment - BCB 546
+# UNIX Assignment - BCB 546
 
 
 ## Data Inspection
@@ -126,7 +126,7 @@ I have 10 files named mch_{1-10}.txt which contain separate chromosomes.
 <br>
 
 
-###Teosinte Data
+### Teosinte Data
 
 ```
 # Separating the files based on the provided strings
