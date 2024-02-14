@@ -122,6 +122,7 @@ I have 10 files named mch_{1-10}.txt which contain separate chromosomes.
 <br>
 1 file named mul.txt for "multiple" and 1 named unknown.txt for "unknown".
 <br>
+The chromosome and position are in the last two columns.
 <br>
 <br>
 
@@ -169,6 +170,7 @@ I have 10 files named mch_{1-10}.txt which contain separate chromosomes.
 <br>
 1 file named mul.txt for "multiple" and 1 named unknown.txt for "unknown".
 <br>
+The chromosome and position are in the last two columns.
 <br>
 <br>
 
