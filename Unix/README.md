@@ -121,7 +121,7 @@ The explanation is provided in the code block using comments.
 <br>
 I have 10 files named mch_{1-10}.txt which contain separate chromosomes.
 <br>
-10 files names inc_order{1-10}.txt for increasing order and "?".
+10 files named inc_order{1-10}.txt for increasing order and "?".
 <br>
 10 files named dec_order{1-10}.txt for decreasing order and replacing "?" with "-".
 <br>
@@ -156,7 +156,7 @@ awk '$2 == "multiple" { print > "multiple.txt" }' ft.txt
 
 The explanation is provided in the maize code block using comments.
 <br>
-I have 10 files named mch_{1-10}.txt which contain separate chromosomes.
+I have 10 filed named mch_{1-10}.txt which contain separate chromosomes.
 <br>
 10 files names inc_order{1-10}.txt for increasing order and "?".
 <br>
