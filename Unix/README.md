@@ -72,7 +72,7 @@ By inspecting this file I learned that:
 <br>
 
 ```
-# Separating the files based on the provided strings
+# Separating the files based on the provided strings and filter out empty lines
 awk '$3 ~ /ZMMIL|ZMMLR|ZMMMR/' fang_et_al_genotypes.txt | grep -v '^$' > maize.txt
 # Getting the header of the file
 head -n 1 fang_et_al_genotypes.txt > head1
@@ -84,6 +84,8 @@ cut -f 3-986 maize2.txt > maize22.txt
 awk -f transpose.awk maize22.txt > fmaize.txt
 # Sort based on the first column before adding the header
 sort -k1,1 fmaize.txt > ffmaize.txt
+#get columns 1 3 4
+awk '{print $1, $3, $4}' snp_position.txt > head2.txt
 sort -k1,1 head2.txt > h2.txt
 join -1 1 -2 1 ffmaize.txt h2.txt > fm.txt
 
