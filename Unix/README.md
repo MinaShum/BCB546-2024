@@ -132,7 +132,7 @@ You can find the information of each sequence in the first 3 columns.
 
 
 ### Teosinte Data
-# The process for Teosinte is same as Maize so the explanation is skipped.
+#### The process for Teosinte is same as Maize so the explanation is skipped.
 
 ```
 awk '$3 ~ /ZMPBA|ZMPIL|ZMPJA/' fang_et_al_genotypes.txt | grep -v '^$' > teosinte.txt
