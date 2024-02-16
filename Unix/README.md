@@ -113,7 +113,7 @@ for i in {1..10}; do sed 's/?/-/g' inc_order$i.txt | sort -r -k2,2n > dec_order$
 # Creating one file for "unknown" sequences
 awk '$2 == "unknown" { print > "unknown.txt" }' fm.txt
 
-#Creating one file for "multiple sequences
+# Creating one file for "multiple sequences
 awk '$2 == "multiple" { print > "multiple.txt" }' fm.txt
 ```
 
