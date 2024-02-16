@@ -84,7 +84,7 @@ sort -k1,1 fmaize.txt > ffmaize.txt
 # Get columns "1","3", and "4" corresponding to "SNP_ID", "Chromosome", and "Position".
 awk '{print $1, $3, $4}' snp_position.txt > head2.txt
 sort -k1,1 head2.txt > h2.txt
-join -1 1 -2 1 ffmaize.txt h2.txt > fm.txt
+join -1 1 -2 1 h2.txt ffmaize.txt > fm.txt
 
 
 # Now we can start processing the fm.txt based on the questions. I did this in a separate folder named maize (mkdir maize, cp fm.txt maize, cd maize).
