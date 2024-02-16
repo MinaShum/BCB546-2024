@@ -1,4 +1,4 @@
-# UNIX Assignment - BCB 546 - ### Mina Shumaly
+# UNIX Assignment - BCB 546 
 
 
 ## Data Inspection
