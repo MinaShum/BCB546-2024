@@ -78,7 +78,7 @@ cut -f 3-986 maize2.txt > maize3.txt
 # Transpose the dataframe. (So we have each chromosome in a row)
 awk -f transpose.awk maize3.txt > fmaize.txt
 
-# Sort both data and header based on the first column before joining. the first column will be the chromosome.
+# Sort both data and header based on the first column before joining. The first column will be the chromosome.
 sort -k1,1 fmaize.txt > ffmaize.txt
 
 # Get columns "1","3", and "4" corresponding to "SNP_ID", "Chromosome", and "Position".
