@@ -1,8 +1,7 @@
-## Course Assignments
+## Files in this folder
 
-A description of files within this folder:
-
-* `UNIX_Assignment.md` and `UNIX_Assignment.pdf`: Instructions for the assignment
-* `UNIX_Assignment_Template.md` and `UNIX_Assignment_Template.pdf`: An example of what your Markdown file should look like when you submit your assignment, including some Markdown syntax that should be helpful for you. The pdf shows how this file is rendered using a tool such as "MacDown"
-* The two files `fang_et_al_genotypes.txt` and `snp_positions.txt` are data files you will be reformatting for the assignment
-* The `transpose.awk` script will be needed to transpose the data (see instructions in `UNIX_Assignment.md`)
+* `fang_et_al_genotypes.txt`: The input data that contains “Sample_ID”, “JG_OTU”, “Group”, and 983 columns with chromosome names in the header. (only 984 columns of chromosomes and groups are needed for this analysis)
+* `snp_position.txt`: Second input dataframe that we only need columns 1, 3, and 4 from. They represent “SNP_ID”, “Chromosome”, and “Position” respectively.
+* `transpose.awk`: Used to transpose data structures.
+* `maize` and `teosinte` directories contain the final 22 files of sorted and filtered chromosomes.  
+* Rest are intermediate files that are all mentioned in the codes of the previous README file.
