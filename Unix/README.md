@@ -1,9 +1,7 @@
-# UNIX Assignment - BCB 546
+# UNIX Assignment - BCB 546 - ### Mina Shumaly
 
 
 ## Data Inspection
-
-### Mina Shumaly
 ### Attributes of `fang_et_al_genotypes`
 
 ```
