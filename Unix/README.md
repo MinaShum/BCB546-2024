@@ -78,13 +78,13 @@ awk '$3 ~ /ZMMIL|ZMMLR|ZMMMR/' fang_et_al_genotypes.txt | grep -v '^$' > maize.t
 head -n 1 fang_et_al_genotypes.txt > head1
 # Add the header to the raw data produced before
 cat head1 maize.txt > maize2.txt
-# Deleting the columns that we don't need their information
+# Deleting the columns that we don't need their information. Sample_ID       JG_OTU deleted and only groups and the chromosomes are kept
 cut -f 3-986 maize2.txt > maize22.txt
 # Transpose the dataframe
 awk -f transpose.awk maize22.txt > fmaize.txt
-# Sort based on the first column before adding the header
+# Sort based on the first column before adding the header. the first column will be the name of the chromosomes with the sequence infront of them in a row
 sort -k1,1 fmaize.txt > ffmaize.txt
-#get columns 1 3 4
+#get columns 1 3 4 with the data of snp id, chromosomes and their positions
 awk '{print $1, $3, $4}' snp_position.txt > head2.txt
 sort -k1,1 head2.txt > h2.txt
 join -1 1 -2 1 ffmaize.txt h2.txt > fm.txt
