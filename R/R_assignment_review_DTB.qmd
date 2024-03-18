@@ -1,0 +1,38 @@
+---
+title: "Mina_R_Review"
+author: "Daniel Bun"
+format: html
+editor: visual
+---
+
+Github quick note: It would be good to move R assignment to another repository. I'm not sure if I can copy a directory within a repository, but that could just be my inexperience with github!
+
+## Part 1
+
+Libraries load great.
+
+Excellent usage of grabbing directory so that any device is able to utilize the script. Alternatively you might be able to write the link from the class github to read directly from there. I believe it's the RAW link i.e. for snp_position.txt: <https://raw.githubusercontent.com/EEOB-BioData/BCB546_Spring2024/main/assignments/UNIX_Assignment/snp_position.txt> might work to clean up the code, but what you have is fine as is!
+
+Maybe add a comment that answers the questions in the R assignment i.e. "2782 rows". Not required, but would be nice.
+
+Data processing looks good. I liked the eloquent gsub to replace the ?/?, I didn't know how that worked.
+
+Though I'm not sure why NAs are being added by coersion.
+
+Using lapply to save processing cost was also a great call, then using a forloop to write those to files is much faster than mine.
+
+I have confirmed that the files are csv files.
+
+It looks like you also successfully repalced '?/?' with '-/-'.
+
+Part 1 looks great, thank you for adding good comments and making sure the code runs properly!
+
+## Part 2
+
+Your graph looks beautiful, I appreciate adding the 2 data sets on one graph and being able to quickly visualize the difference. Otherwise looks great!
+
+Your homozygous and heterozygous looks great as well!
+
+Your choice one also looks great. There does appear to be some NAs being added as a warning.
+
+Overall, an excellent assignment, I don't have any negative comments. It was a pleasure to read this code and I learned a lot from it!
