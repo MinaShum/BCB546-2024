@@ -1,0 +1,32 @@
+---
+title: "GinushikaReview"
+output: html_document
+date: "2024-03-17"
+---
+
+Peer review on March 17, 2024 by Ginushika Premarathne
+
+Overall your assignment work flow was done well, and easy to follow and reproduce.
+
+# Data Inspection and Processing
+
+I have a suggestion for arranging maize and teosinte data in increasing and decreasing order.
+You can use the lapply  command instead separating the data one by one and create the data series you need
+
+you can modify the following command to match your files
+
+
+lapply(unique(file_name$Chromosome), function(chrom_num) {
+  maizechrom <- file_name %>% filter(Chromosome == chrom_num) %>% arrange(Position)
+  write.table(maizechrom,sep = "\t", file = paste("./desired_directory/maize_increasing", chrom_num, sep = "_"), quote = FALSE)
+})
+
+
+
+# Data visualization
+
+Your plots look excellent, So I have no suggestion for this section.
+I am very impressed with your first plot.
+
+
+Thanks and good luck!
