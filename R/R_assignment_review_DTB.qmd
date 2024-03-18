@@ -5,6 +5,8 @@ format: html
 editor: visual
 ---
 
+Github quick note: It would be good to move R assignment to another repository. I'm not sure if I can copy a directory within a repository, but that could just be my inexperience with github!
+
 ## Part 1
 
 Libraries load great.
