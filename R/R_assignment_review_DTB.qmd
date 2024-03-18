@@ -26,3 +26,11 @@ It looks like you also successfully repalced '?/?' with '-/-'.
 Part 1 looks great, thank you for adding good comments and making sure the code runs properly!
 
 ## Part 2
+
+Your graph looks beautiful, I appreciate adding the 2 data sets on one graph and being able to quickly visualize the difference. Otherwise looks great!
+
+Your homozygous and heterozygous looks great as well!
+
+Your choice one also looks great. There does appear to be some NAs being added as a warning.
+
+Overall, an excellent assignment, I don't have any negative comments. It was a pleasure to read this code and I learned a lot from it!
